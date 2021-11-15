@@ -1,0 +1,142 @@
+.slider-root {
+    .slider-wrapper {
+        .slider-container {
+            display: flex;
+            .tabs-root {
+                width: 15%;
+                .tabs-wrapper {
+                    .tab-item {
+                        display: block;
+                        padding: 0 15px;
+                        &.active {
+                            position: relative;
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                width: 5px;
+                                height: 100%;
+                                display: flex;
+                                background-color: #0026e1;
+                                top: 0;
+                                left: 0;
+                                border-bottom-right-radius: 15px;
+                                border-top-right-radius: 15px;
+                            }
+                            .text-item {
+                                font-weight: 800;
+                                color: #0026e1;
+                                background-color: #e4f1fd;
+                                border-radius: 5px;
+                            }
+                        }
+                        .text-item {
+                            padding: 15px 15px;
+                            font-size: 18px;
+                            color: #6e6e6e;
+                        }
+                    }
+                }
+            }
+            .tabs-content-root {
+                width: 80%;
+                .tabs-content-wrapper {
+                    .tabs-content-item {
+                        display: none;
+                        overflow: hidden;
+                        .tab-item {
+                            border: 1px solid #dbdbdb;
+                            border-radius: 5px;
+                            padding: 10px;
+                            overflow: hidden;
+                            .img-block {
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                            .title-block {
+                                padding: 15px 0 30px 15px;
+                                p {
+                                    line-height: 20px;
+                                    display: -webkit-box;
+                                    -webkit-line-clamp: 3;
+                                    -webkit-box-orient: vertical;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                }
+                            }
+                            .price-block {
+                                padding: 15px 0 15px 15px;
+                                border-radius: 5px;
+                                background-color: #dbdbdb;
+                                p {
+                                    font-weight: bolder;
+                                    font-size: 23px;
+                                }
+                            }
+                            .cargo-info {
+                                padding: 0 0 35px 15px;
+                                margin-top: 10px;
+                                p {
+                                    font-size: 13px;
+                                    color: #6d6d6d;
+                                    svg {
+                                        margin-right: 5px;
+                                        color: #00c900;
+                                    }
+                                }
+                            }
+                        }
+                        &.active {
+                            display: block;
+                        }
+
+                        &.owl-carousel {
+                            .owl-stage {
+                                display: flex;
+                                .owl-item {
+                                    display: flex;
+                                }
+                            }
+
+                            .owl-nav {
+                                position: absolute;
+                                top: 15%;
+                                width: 100%;
+                                .owl-prev {
+                                    left: -40px;
+                                }
+                                .owl-next {
+                                    right: -40px;
+                                    svg {
+                                        right: auto;
+                                        left: 20%;
+                                    }
+                                }
+                                button {
+                                    position: absolute;
+                                    background-color: #fff;
+                                    border: 1px solid #dbdbdb;
+                                    border-radius: 50%;
+                                    width: 80px;
+                                    height: 80px;
+                                    svg {
+                                        font-size: 25px;
+                                        position: absolute;
+                                        right: 20%;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                        color: #dbdbdb;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+h1 {
+    padding: 0 0 10px 30px;
+}

@@ -1,0 +1,132 @@
+@media only screen and (max-width: 1600px) {
+    .slider-root {
+        .slider-wrapper {
+            .slider-container {
+                .tabs-root {
+                    width: 25%;
+                   
+                }
+                .tabs-content-root {
+                    width: 74%;
+                  
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 960px) {
+    .slider-root {
+        .slider-wrapper {
+            .slider-container {
+                .tabs-root {
+                    .tabs-wrapper {
+                        .tab-item {
+                            .text-item {
+                                font-size: 15px;
+                                padding: 12px 15px;
+                            }
+                        }
+                    }
+                }
+                .tabs-content-root {
+                    .tabs-content-wrapper {
+                        .tabs-content-item {
+                            .tab-item {
+                                .title-block {
+                                    p {
+                                        font-size: 14px;
+                                    }
+                                }
+                                .price-block {
+                                    p {
+                                        font-size: 18px;
+                                    }
+                                }
+                                .cargo-info {
+                                    p {
+                                        font-size: 12px;
+                                        svg {
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h1{
+        font-size: 1.3em;
+    }
+    .slider-root {
+        .slider-wrapper {
+            .slider-container {
+                flex-direction: column;
+                .tabs-root {
+                    width: 100%;
+                    overflow-x: auto;
+                    margin-bottom: 10px;
+                    border-bottom: 1px solid #6e6e6e;
+                    .tabs-wrapper {
+                        display: flex;
+                        white-space: nowrap;
+                        .tab-item {
+                            &.active {
+                                border-bottom: 2px solid #0026e1;
+                                &::before {
+                                  display: none;
+                                }
+                                .text-item {
+                                    background-color: transparent;
+                                    color: #000;
+                                }
+                            }
+                        }
+                    }
+                }
+                .tabs-content-root {
+                    width: 100%;
+                    .tabs-content-wrapper {
+                        .tabs-content-item {
+                            .tab-item {
+                                box-shadow: 0px 0px 12px 8px rgba(219,219,219,1);
+                                .title-block {
+                                    padding: 10px 0 15px 10px;
+                                    
+                                    p {
+                                        font-size: 12px;
+                                    }
+                                }
+                                .price-block {
+                                    p {
+                                        font-size: 14px;
+                                    }
+                                }
+                                .cargo-info {
+                                    p {
+                                        font-size: 12px;
+                                        svg {
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                            &.owl-carousel {
+                                .owl-nav {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

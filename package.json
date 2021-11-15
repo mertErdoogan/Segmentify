@@ -1,0 +1,22 @@
+{
+  "name": "segmentify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w assets/scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mertErdoogan/Segmentify.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mertErdoogan/Segmentify/issues"
+  },
+  "homepage": "https://github.com/mertErdoogan/Segmentify#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
